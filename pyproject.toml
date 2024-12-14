@@ -1,0 +1,20 @@
+[project]
+name = "musical_octo_happiness"
+version = "0.1.0"
+description = "musical_octo_happiness using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.86.0,<1.0.0"
+]
+
+[project.scripts]
+musical_octo_happiness = "musical_octo_happiness.main:run"
+run_crew = "musical_octo_happiness.main:run"
+train = "musical_octo_happiness.main:train"
+replay = "musical_octo_happiness.main:replay"
+test = "musical_octo_happiness.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
